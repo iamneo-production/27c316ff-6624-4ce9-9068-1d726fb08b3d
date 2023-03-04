@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload daily air quality data for a year</title>
+    <link rel="stylesheet" href="css\style.css">
+    <style>
+      body{
+    background-color: whitesmoke;
+    font-style:unset;
+}
+h1{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+}
+form{
+  border-radius: 4px;
+  border: 1px solid #000000;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+}
+  input[type=file] {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:center;
+}
+
+footer{
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Heat Wave Prediction </h1>
+    <div align="center">
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}" >
+      <br>
+      <label>Upload File Here For Prediction</label>
+      <input type="file" name="file" accept=".csv">
+      <br><br>
+      <br>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+    <br>
+    <footer>Made By <b>TEAM SKY</b></footer>
+  </body>
+</html>
