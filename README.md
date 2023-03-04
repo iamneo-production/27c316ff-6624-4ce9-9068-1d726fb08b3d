@@ -50,4 +50,4 @@ GUI:
 First open XAMPP Apache server in any browser and write : localhost/frontend
 For ADMIN end :
 The user has to launch app.py using the command “python app.py” . This will open the file app.py and 
-start the flask server and then the user can use the flask website
+start the flask server and then the user can use the flask website.
